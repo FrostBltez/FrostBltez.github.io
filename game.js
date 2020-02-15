@@ -1,5 +1,4 @@
-//Game Core//
-const d = document
+onst d = document
 const Prodsr = d.getElementById("ProductionScreen")
 
 const ProductionPage = new Array(Prodsr)

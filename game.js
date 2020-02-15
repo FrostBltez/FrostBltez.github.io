@@ -1,4 +1,4 @@
-onst d = document
+const d = document
 const Prodsr = d.getElementById("ProductionScreen")
 
 const ProductionPage = new Array(Prodsr)

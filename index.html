@@ -2,15 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
-    <title>Coming Soon!</title>
+    <title></title>
 </head>
 <body>
-<h1 class="Text2" id="Text2">Coming Soon</h1>
-<p class="Text" id="Text">Coming Soon</p>
+
+    <div class="header">
+        <p>Play the greatest RPG ever to be made!</p>
+        <h2>Choose your character!</h2>
+  </div>
+
+    <div class="interface">
+        <a href="#" onclick="GameManager.setGameStart('Monster')">
+            <img src="Characters/Monster.png" alt="Monster">
+            <div>
+                <h3>Monster</h3>
+                <p>This is the monster has higher health and stamina, however their
+               strength also makes them slower and clumsier.</p>
+            </div>
+        </a>
+
+        <a href="#" onclick="GameManager.setGameStart('Alien')">
+            <img src="Characters/Alien.png" alt="Alien">
+            <div>
+                <h3>Alien</h3>
+                <p>This is the has low health and stamina, however their strength also 
+                    makes them faster and big..</p>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="actions">
+ 
+    </div>
+
+    <div class="arena">
+ 
+    </div>
+
+    <div class="enemy">
+ 
+    </div>
+
 </body>
 </html>
 <link rel="stylesheet" href="css1fun.css">
-<script src="game.js"></script>
+<script src="GameManager.js"></script>
 <!--Testing-->

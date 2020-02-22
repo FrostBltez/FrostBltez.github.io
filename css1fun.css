@@ -1,3 +1,7 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body {
   background: #210044;
 }
@@ -5,4 +9,7 @@ body {
 canvas {
   display: block;
   background: #ffffff;
+  border: 2px solid #ffffff;
+  margin: 0px auto;
+
 }

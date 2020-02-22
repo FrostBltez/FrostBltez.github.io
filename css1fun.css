@@ -1,6 +1,8 @@
-body {
+body,html {
   margin: 0px;
   padding: 0px;
+  width: 100px;
+  height: 100px;
   background: #079bc0;
   font-family: "Monterrat",sans-serif;
 }

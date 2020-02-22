@@ -36,6 +36,10 @@ img {
     color: #f8b700;
   }
   
+  .h3{
+    font-family: Arial;
+    font-size: 50px;
+  }
   .interface {
     padding: 0;
     width: 100%;

@@ -1,3 +1,8 @@
 body {
   background: #210044;
 }
+
+canvas {
+  display: block;
+  background: #ffffff;
+}

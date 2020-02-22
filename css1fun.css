@@ -23,3 +23,9 @@ canvas {
   text-align: center;
   color: white;
 }
+
+.container h1{
+  text-transform: uppercase;
+  font-size: 60px;
+  
+}

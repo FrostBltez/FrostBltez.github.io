@@ -14,3 +14,12 @@ canvas {
   margin: 0px auto;
 
 }
+
+.container{
+  width: 100%;
+  position: absolutel;
+  top:50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+
+}

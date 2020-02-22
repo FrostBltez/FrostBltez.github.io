@@ -1,6 +1,7 @@
 function Game_Init(){
 window.addEventListener('keydown', function(evt){
-console.log("Key Pressed")
+var key_pressed = evt.keyCode;
+console.log(key_pressed);
 });
 
 

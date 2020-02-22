@@ -1,40 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Rogue | A ramdom Rogue like game!</title>
+	<meta charset="UTF-8">
+	<title>Time</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <div class="container">
-        <h1>Rogue Game(Coming Soon)</h1>
-        <h2>This Website is Coming Soon!</h2>
-
-        <div class="count">
-            <div class="counted">
-                <span id="days">00</span>
-                DAYS
-            </div>
-
-            <div class="counted">
-                <span id="hours">00</span>
-                HOURS
-            </div>
-
-            <div class="counted">
-                <span id="minutes">00</span>
-                MINUTES
-            </div>
-
-            <div class="counted">
-                <span id="seconds">00</span>
-                SECONDS
-            </div>
-        </div>
-
-    </div>
-    
+	<div class="container">
+		<h1>Time !</h1>
+		<div class="count">
+			<div class="countd">
+				<span id="days">00</span>
+				DAYS
+			</div>
+			<div class="countd">
+				<span id="hours">00</span>
+				HOURS
+			</div>
+			<div class="countd">
+				<span id="minutes">00</span>
+				MINUTES
+			</div>
+			<div class="countd">
+				<span id="seconds">00</span>
+				SECONDS
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var count = new Date('dec 1, 2018 00:00:00').getTime();
+		var x = setInterval(function(){
+			var now = new Date().getTime();
+			var d = count - now;
+			
+			var days = Math.floor(d/(750000*80*60*24));
+			var hours = Math.floor((d%(10000*8*60*24))/(1000*60*60));
+			var minutes = Math.floor((d%(1000*10*60))/(1000*60));
+			var seconds = Math.floor((d%(1000*60))/1000);
+			
+			document.getElementById('days').innerHTML = days;
+			document.getElementById('hours').innerHTML = hours;
+			document.getElementById('minutes').innerHTML = minutes;
+			document.getElementById('seconds').innerHTML = seconds;
+			
+			if(d <= 0){
+				clearInterval(x);
+			}
+			
+		},1000);
+	</script>
+	
 </body>
 </html>
-<link rel="stylesheet" href="css1fun.css">
-<script src="GameManager.js"></script>
+
+
+
+     CSS 
+
+
+body,html{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+body{
+	background:url(img/111.jpg);
+	background-size:cover;
+	font-family:Arial, sans-serigf;
+}
+
+.container{
+	width:100%;
+	position:absolute;
+	top:16%;
+	left:30%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	color:white;
+}
+
+.container h1{
+	text-transform:uppercase;
+	font-size:60px;
+	margin:20px;
+	letter-spacing:10px;
+}
+
+.count{
+	margin:40px 0;
+	/* color:grey; */
+}
+
+.countd{
+	display:inline-block;
+	width:80px;
+	height:80px;
+	border:2px solid;
+	margin:0 30px;
+	font-size:12px;
+	border-radius:50%;
+	overflow:hidden;
+	/* background:#fff; */
+}
+
+.countd span{
+	display:block;
+	font-size:26px;
+	margin-top:14px;
+	/* color:green; */
+}
